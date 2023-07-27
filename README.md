@@ -2,8 +2,6 @@
 
 ### The challenge:
 
-This is project using HTML, CSS and JavaScript to ...
-
 ### The requirements:
 
 ![screenshot](images/requirements.png)
@@ -26,7 +24,5 @@ This is project using HTML, CSS and JavaScript to ...
 ### Code Review Follow up
 
 ### Enhancement still needed
-
-- Would like to update the project with the names and bio of the liked dogs. Need to add a "contact me" button as well.
 
 ### Resources:
