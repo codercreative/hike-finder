@@ -1,37 +1,355 @@
+/*------- GENERAL -------*/
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700&display=swap");
+
+:root {
+  --green: #638a5c;
+  --yellow: #ece480;
+  --black: #000000;
+  --dark-grey: #232323;
+  --warm-grey: #565656;
+  --warm-light-grey: #6f6f6f;
+  --light-grey: #c3c3c3;
+  --white: #ffffff;
+}
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 body {
   font-family: "Inter", sans-serif;
 }
 
-/* HERO */
+/*------- HEADER -------*/
 
-.hero-section {
-  position: relative;
+.header {
+  padding: 1em 1em 1em 0;
 }
 
-.hero-img {
-  width: 100%;
-  margin: 0;
+/* logo - burger menu - nav */
+
+.logo-burger-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0.8em;
+}
+
+.logo {
+  max-width: 35%;
+}
+
+/* mobile nav */
+
+.menu-icon {
+  height: 30px;
+  width: 30px;
+}
+
+/* desktop nav */
+
+.expand-nav-container {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.home-nav,
+.explore-nav {
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+.sign-up-nav,
+.login-nav {
+  padding: 0.6em 1.4em;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+}
+
+.sign-up-nav {
+  background-color: var(--green);
+  color: var(--white);
+  margin-right: 0.5em;
+}
+
+.login-nav {
+  background-color: var(--white);
+  border: 2px solid var(--black);
+}
+
+/*------- MAIN -------*/
+
+/* HERO SECTION */
+
+.hero-container {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.29) 0%,
+      rgba(0, 0, 0, 0.29) 100%
+    ),
+    url("/images/hero-desktop.png"), var(--light-grey) 50% / cover no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* cropping the image: */
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.hero-text-container {
+  color: var(--white);
+  padding: 1.5em 2em 0 1.5em;
 }
 
 .hero-title {
-  color: #fff;
-  position: absolute;
-  left: 24px;
-  top: 24px;
+  color: var(--white);
+  font-size: 2.8rem;
+  font-weight: 400;
 }
 
-/* HELPER CLASSES */
+.hero-subtitle {
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-shadow: 0px 0px 4px var(--dark-grey);
+}
+
+/* search */
+
+.search-container {
+  border: 2px solid var(--white);
+  border-radius: 6px;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  margin: 0 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.magnifier-icon {
+  margin: 0 0.5em;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.search-field {
+  /* make the search button stay within the search field: */
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.search-field::placeholder {
+  color: rgba(195, 195, 195, 0.8);
+}
+
+.search-btn {
+  border-radius: 0 6px 6px 0;
+  color: var(--white);
+  background: var(--green);
+  padding: 0.3em 0.6em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.search-btn:hover {
+  opacity: 0.8;
+}
+
+/* HIKE SECTION */
+
+.hike-section {
+  margin: 1em;
+}
+
+.hike-main-title {
+  font-size: 1.2rem;
+  color: var(--warm-grey);
+  margin: 1.5em 0 0.5em 0;
+}
+
+.hike-example {
+  margin: 1em 0;
+}
+
+.hike-img {
+  width: 100%;
+}
+
+.hike-title {
+  font-size: 1.1rem;
+  margin: 1em 0 0 0.4em;
+}
+
+.hike-subhead {
+  margin: 0.5em 0 0 0.4em;
+  font-size: 0.8rem;
+}
+
+.hike-description {
+  color: var(--warm-light-grey);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  margin: 1em 0.4em;
+}
+
+.learn-more-btn {
+  text-transform: uppercase;
+  background-color: var(--green);
+  color: var(--white);
+  cursor: pointer;
+  padding: 0.5em 0.8em;
+  font-size: 0.8rem;
+  border: none;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.learn-more-btn:hover {
+  opacity: 0.8;
+}
+
+/*------- HELPER CLASSES -------*/
 
 .accent {
-  color: #ece480;
+  display: block;
+  color: var(--yellow);
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+.margin-bottom {
+  margin-bottom: 2.4em;
+}
+
+/*------- MEDIA QUERIES -------*/
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    max-width: 70%;
+  }
+
+  .expand-nav-container {
+    display: block;
+  }
+  .nav {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .hero-container {
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-image: linear-gradient(
+        to left,
+        transparent 50%,
+        rgb(35, 35, 35, 0.5) 50%
+      ),
+      url("/images/hero-desktop.png");
+  }
+
+  .hero-text-container {
+    margin-bottom: auto;
+    padding-top: 5em;
+  }
+
+  .hero-title {
+    font-size: 3.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1em;
+    font-weight: 400;
+    width: 360px;
+    line-height: 1.6;
+  }
+
+  .search-container {
+    flex-grow: 1;
+    max-width: 350px;
+    margin-left: auto;
+  }
+
+  .search-field {
+    flex-basis: 100%;
+  }
+
+  /* HIKE SECTION */
+
+  .hike-example {
+    display: flex;
+  }
+
+  .reverse-order {
+    flex-direction: row-reverse;
+  }
+
+  .hike-img {
+    flex: 2 1 0px;
+    width: 0;
+  }
+
+  .hike-title,
+  .hike-subhead,
+  .hike-description {
+    margin: 0.5 0 0 0;
+  }
+
+  .hike-text-container {
+    margin: 1em 3em;
+    flex: 1 1 0px;
+    width: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hike-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    padding: 1em 0;
+  }
+
+  .logo-burger-container {
+    margin: 1em 0;
+  }
 }

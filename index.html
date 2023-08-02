@@ -12,17 +12,109 @@
     <title>Hike Finder</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <img src="" alt="" />
-      </nav>
-    </header>
-    <section class="hero-section">
-      <img class="hero-img" src="/images/image-hero.jpg" alt="hero image" />
-      <h1 class="hero-title">
-        Find Your Next <span class="accent">Adventure</span>
-      </h1>
-    </section>
+    <div class="container">
+      <header class="header">
+        <div class="logo-burger-container">
+          <img class="logo" src="images/logo.svg" alt="" />
+
+          <img class="menu-icon" src="images/nav-menu.png" alt="" />
+        </div>
+
+        <nav class="expand-nav-container">
+          <ul class="nav">
+            <li class="home-nav">Home</li>
+            <li class="explore-nav">Explore</li>
+            <li>
+              <button class="sign-up-nav">Sign Up</button>
+            </li>
+            <li>
+              <button class="login-nav">Login</button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="hero-container">
+          <div class="hero-text-container">
+            <h1 class="hero-title">
+              Find Your Next <span class="accent">Adventure</span>
+            </h1>
+            <h2 class="hero-subtitle margin-bottom">
+              Your next hiking adventure awaits. Get on the trail with detailed
+              maps and updates shared by hikers like you.
+            </h2>
+          </div>
+          <div class="search-container margin-bottom">
+            <ion-icon class="magnifier-icon" name="search-outline"></ion-icon>
+            <input
+              class="search-field"
+              type="text"
+              placeholder="Search by city"
+              onfocus="this.placeholder=''"
+              onblur="this.placeholder='Enter city'"
+            />
+            <a class="search-btn" href="#home">Search</a>
+          </div>
+        </section>
+        <section class="hike-section">
+          <h3 class="hike-main-title">Hikes near Bergen</h3>
+          <div class="hike-example">
+            <img class="hike-img" src="images/floyen.jpg" alt="Fløyen" />
+            <div class="hike-text-container">
+              <h4 class="hike-title">Fløyen</h4>
+              <p class="hike-subhead">Length: 10.2 km - Est. 5 h</p>
+              <p class="hike-description">
+                Fløibanen is one of Norway's most visited attractions. At the
+                top of Fløyen you will find a large and varied hiking area,
+                spectacular views of the city.
+              </p>
+              <button class="learn-more-btn">Learn more</button>
+            </div>
+          </div>
+          <div class="hike-example reverse-order">
+            <img class="hike-img" src="images/ulriken.jpg" alt="Ulriken" />
+            <div class="hike-text-container">
+              <h4 class="hike-title">Ulriken</h4>
+              <p class="hike-subhead">Length: 3.5 km - Est. 2 h 30 m</p>
+              <p class="hike-description">
+                Ulriken is the highest of the Seven Mountains that surround the
+                city of Bergen, Norway. It has a height of 643 meters (2,110 ft)
+                above sea level.
+              </p>
+              <button class="learn-more-btn">Learn more</button>
+            </div>
+          </div>
+          <div class="hike-example">
+            <img
+              class="hike-img"
+              src="images/landasfjellet.jpg"
+              alt="Landåsfjellet"
+            />
+            <div class="hike-text-container">
+              <h4 class="hike-title">Landåsfjellet</h4>
+              <p class="hike-subhead">Length: 3.5 km - Est. 2 h 30 m</p>
+              <p class="hike-description">
+                Landåsfjellet is a lower plateau south of Ulriken/Haugavarden
+                which offers numerous trails, and is almost a separate hiking
+                region by its own.
+              </p>
+              <button class="learn-more-btn">Learn more</button>
+            </div>
+          </div>
+        </section>
+        <section class="cta-section"></section>
+      </main>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
   <script src="index.js"></script>
 </html>
+
+<!-- <ion-icon class="magnifier-icon" name="search-outline"></ion-icon> -->
