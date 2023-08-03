@@ -108,7 +108,7 @@ body {
       rgba(0, 0, 0, 0.29) 0%,
       rgba(0, 0, 0, 0.29) 100%
     ),
-    url("/images/hero-desktop.png"), var(--light-grey) 50% / cover no-repeat;
+    url("/images/hero-img.png"), var(--light-grey) 50% / cover no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
   /* cropping the image: */
@@ -281,7 +281,7 @@ body {
         transparent 50%,
         rgb(35, 35, 35, 0.5) 50%
       ),
-      url("/images/hero-desktop.png");
+      url("/images/hero-img.png");
   }
 
   .hero-text-container {
