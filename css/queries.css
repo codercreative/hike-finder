@@ -1,0 +1,125 @@
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    max-width: 70%;
+  }
+
+  .expand-nav-container {
+    display: block;
+  }
+  .nav {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .hero-container {
+    min-height: 425px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-image: linear-gradient(
+        to left,
+        transparent 50%,
+        rgb(35, 35, 35, 0.5) 50%
+      ),
+      url("../images/hero-img.png");
+  }
+
+  .hero-text-container {
+    margin-bottom: auto;
+    padding-top: 5em;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    max-width: 380px;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .search-container {
+    flex-grow: 1;
+    max-width: 350px;
+    margin-left: auto;
+  }
+
+  .search-field {
+    flex-basis: 100%;
+  }
+
+  /* HIKE SECTION */
+
+  .hike-example {
+    display: flex;
+    margin: 1.3em 0;
+  }
+
+  .reverse-order {
+    flex-direction: row-reverse;
+  }
+
+  .hike-img {
+    flex: 2 1 0px;
+    width: 0;
+    max-height: 350px;
+  }
+
+  .hike-title,
+  .hike-subhead,
+  .hike-description {
+    margin: 0.5em 0 0 0;
+  }
+
+  .hike-title {
+    letter-spacing: 0.4px;
+  }
+
+  .hike-text-container {
+    margin: 1em;
+    flex: 1 1 0px;
+    width: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-subtitle {
+    max-width: 485px;
+  }
+
+  .hike-title {
+    font-size: 1.5rem;
+  }
+
+  .hike-subhead {
+    font-size: 1rem;
+  }
+
+  .hike-description {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    padding: 1em 0;
+  }
+
+  .logo-burger-container {
+    margin: 1em 0;
+  }
+
+  .hero-subtitle {
+    max-width: 570px;
+  }
+}
