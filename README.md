@@ -1,6 +1,12 @@
 ## Hike Finder
 
+### Requirements
+
 ![screenshot](images/requirements.png)
+
+### Stretch goals
+
+![screenshot](images/stretch-goals.png)
 
 ### Built with
 

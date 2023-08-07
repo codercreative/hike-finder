@@ -188,34 +188,44 @@ body {
 }
 
 .hike-main-title {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: var(--warm-grey);
-  margin: 1.5em 0 0.5em 0;
+  margin: 1em 0 0.5em 0;
 }
 
 .hike-example {
-  margin: 1em 0;
+  margin: 0.5em 0;
 }
 
 .hike-img {
   width: 100%;
+  object-fit: cover;
+}
+
+.hike-text-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0.3em;
 }
 
 .hike-title {
-  font-size: 1.1rem;
-  margin: 1em 0 0 0.4em;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0.4em 0;
 }
 
 .hike-subhead {
-  margin: 0.5em 0 0 0.4em;
+  margin: 0;
   font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0 0 1em 0;
 }
 
 .hike-description {
   color: var(--warm-light-grey);
-  font-size: 0.8rem;
   line-height: 1.4;
-  margin: 1em 0.4em;
+  margin: 0;
+  padding-bottom: 1.3em;
 }
 
 .learn-more-btn {
@@ -223,11 +233,14 @@ body {
   background-color: var(--green);
   color: var(--white);
   cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
   padding: 0.5em 0.8em;
-  font-size: 0.8rem;
+  margin-bottom: 1em;
   border: none;
   transition: 0.3s;
   border-radius: 4px;
+  max-width: 150px;
 }
 
 .learn-more-btn:hover {
@@ -272,7 +285,7 @@ body {
   }
 
   .hero-container {
-    min-height: 500px;
+    min-height: 425px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -290,13 +303,12 @@ body {
   }
 
   .hero-title {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 
   .hero-subtitle {
-    font-size: 1.1em;
+    max-width: 380px;
     font-weight: 400;
-    width: 360px;
     line-height: 1.6;
   }
 
@@ -314,6 +326,7 @@ body {
 
   .hike-example {
     display: flex;
+    margin: 1.3em 0;
   }
 
   .reverse-order {
@@ -323,24 +336,41 @@ body {
   .hike-img {
     flex: 2 1 0px;
     width: 0;
+    max-height: 350px;
   }
 
   .hike-title,
   .hike-subhead,
   .hike-description {
-    margin: 0.5 0 0 0;
+    margin: 0.5em 0 0 0;
+  }
+
+  .hike-title {
+    letter-spacing: 0.4px;
   }
 
   .hike-text-container {
-    margin: 1em 3em;
+    margin: 1em;
     flex: 1 1 0px;
     width: 0;
   }
 }
 
 @media (min-width: 1024px) {
+  .hero-subtitle {
+    max-width: 485px;
+  }
+
   .hike-title {
-    font-size: 1.6rem;
+    font-size: 2rem;
+  }
+
+  .hike-subhead {
+    font-size: 1.2rem;
+  }
+
+  .hike-description {
+    font-size: 1.5rem;
   }
 }
 
@@ -351,5 +381,9 @@ body {
 
   .logo-burger-container {
     margin: 1em 0;
+  }
+
+  .hero-subtitle {
+    max-width: 570px;
   }
 }
