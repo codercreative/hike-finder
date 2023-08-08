@@ -90,6 +90,10 @@
     flex: 1 1 0px;
     width: 0;
   }
+
+  .cta-container {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1024px) {

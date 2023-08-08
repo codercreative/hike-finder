@@ -11,6 +11,7 @@
   --warm-light-grey: #6f6f6f;
   --light-grey: #c3c3c3;
   --very-light-grey: #fafafa;
+  --copyright-grey: #a5a5a5;
   --white: #ffffff;
 }
 
@@ -248,15 +249,77 @@ body {
   opacity: 0.8;
 }
 
-/*------- HELPER CLASSES -------*/
+/* CTA SECTION */
 
-.accent {
-  display: block;
-  color: var(--yellow);
-  font-weight: bold;
-  flex-wrap: wrap;
+.cta-section {
+  background-color: var(--very-light-grey);
+  text-align: center;
 }
 
-.margin-bottom {
-  margin-bottom: 2.4em;
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3em 0 0 0;
+  padding: 3.5em 0;
+}
+
+.cta-article {
+  padding: 2em 0;
+}
+
+.cta-img {
+  height: 3em;
+  width: 3em;
+  margin-bottom: 1em;
+}
+
+.cta-title {
+  margin-bottom: 1em;
+  font-size: 1rem;
+}
+
+.cta-description {
+  max-width: 380px;
+}
+
+/*------- FOOTER -------*/
+
+.footer-section {
+  background: var(--black);
+  text-align: center;
+}
+
+.footer-container {
+  padding: 4em 0 8em 0;
+}
+
+.footer-nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+}
+
+.footer-nav-ul {
+  display: flex;
+  gap: 1.5em;
+  list-style-type: none;
+  margin-bottom: 0.1em;
+}
+
+.footer-nav-li {
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.footer-logo {
+  max-width: 12em;
+  margin-bottom: 0.5em;
+}
+
+.footer-copyright {
+  color: var(--copyright-grey);
+  font-size: 0.9rem;
 }
