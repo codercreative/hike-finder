@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/queries.css" />
     <link rel="stylesheet" href="css/helper.css" />
+    <link rel="stylesheet" href="css/explore.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
@@ -26,9 +28,7 @@
         <nav class="expand-nav-container">
           <ul class="nav">
             <li class="home-nav"><a href="index.html">Home</a></li>
-            <li class="explore-nav">
-              <a href="explore.html">Explore</a>
-            </li>
+            <li class="explore-nav"><a href="#">Explore</a></li>
             <li>
               <button class="sign-up-nav">
                 <a class="sign-up-link" href="#">Sign Up</a>
@@ -54,64 +54,55 @@
               maps and updates shared by hikers like you.
             </h2>
           </div>
-          <div class="search-container margin-bottom">
-            <ion-icon class="magnifier-icon" name="search-outline"></ion-icon>
-            <input
-              class="search-field"
-              type="text"
-              placeholder="Search by city"
-              onfocus="this.placeholder=''"
-              onblur="this.placeholder='Enter city'"
-            />
-            <a class="search-btn" href="#home">Search</a>
-          </div>
         </section>
         <!--HIKE SECTION -->
         <section class="hike-section">
-          <h3 class="hike-main-title">Hikes near Bergen</h3>
+          <h3 class="hike-main-title">Explore Curated Trails Near You</h3>
           <!-- ARTICLES -->
           <div class="hike-example">
-            <img class="hike-img" src="images/floyen.png" alt="Fløyen" />
+            <img
+              class="hike-img"
+              src="images/tryon.png"
+              alt="Tryon landscape"
+            />
             <div class="hike-text-container">
-              <h4 class="hike-title">Fløyen</h4>
-              <p class="hike-subhead">Length: 10.2 km - Est. 5 h</p>
+              <h4 class="hike-title">Tryon Creek State Area</h4>
+              <p class="hike-subhead">Moderate</p>
 
               <p class="hike-description">
-                Fløibanen is one of Norway's most visited attractions. At the
-                top of Fløyen you will find a large and varied hiking area,
-                spectacular views of the city.
+                670-acre forested area along a ravine with well-maintained
+                trails for hikers, horses & leashed dogs.
               </p>
-              <button class="learn-more-btn">Learn more</button>
             </div>
           </div>
           <div class="hike-example reverse-order">
-            <img class="hike-img" src="images/ulriken.png" alt="Ulriken" />
+            <img
+              class="hike-img"
+              src="images/marquam.png"
+              alt="Marquam landscape"
+            />
             <div class="hike-text-container">
-              <h4 class="hike-title">Ulriken</h4>
-              <p class="hike-subhead">Length: 3.5 km - Est. 2 h 30 m</p>
+              <h4 class="hike-title">Marquam Nature Park</h4>
+              <p class="hike-subhead">Easy</p>
               <p class="hike-description">
-                Ulriken is the highest of the Seven Mountains that surround the
-                city of Bergen, Norway. It has a height of 643 meters (2,110 ft)
-                above sea level.
+                193 acres of undeveloped land & over 5 miles of hiking trails
+                with forested scenic views.
               </p>
-              <button class="learn-more-btn">Learn more</button>
             </div>
           </div>
           <div class="hike-example margin-bottom">
             <img
               class="hike-img"
-              src="images/landasfjellet.png"
-              alt="Landåsfjellet"
+              src="images/wildwood.png"
+              alt="Wildwood landscape"
             />
             <div class="hike-text-container">
-              <h4 class="hike-title">Landåsfjellet</h4>
-              <p class="hike-subhead">Length: 3.5 km - Est. 2 h 30 m</p>
+              <h4 class="hike-title">Wildwood Trail Area</h4>
+              <p class="hike-subhead">Easy</p>
               <p class="hike-description">
-                Landåsfjellet is a lower plateau south of Ulriken/Haugavarden
-                which offers numerous trails, and is almost a separate hiking
-                region by its own.
+                The Wildwood Trail starts at the Vietnam Memorial adjacent to
+                the Oregon Zoo and World Forestry Center and circles uphill.
               </p>
-              <button class="learn-more-btn">Learn more</button>
             </div>
           </div>
           <!-- ARTICLES END-->

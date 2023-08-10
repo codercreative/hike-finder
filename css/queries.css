@@ -76,9 +76,12 @@
   }
 
   .hike-title,
-  .hike-subhead,
-  .hike-description {
+  .hike-subhead {
     margin: 0.5em 0 0 0;
+  }
+
+  .hike-description {
+    margin: 0.5em 1em 0 0;
   }
 
   .hike-title {
@@ -93,6 +96,21 @@
 
   .cta-container {
     flex-direction: row;
+  }
+
+  .cta-article {
+    margin: 0 1.5em;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0 1em;
+  }
+
+  .footer-copyright {
+    text-align: left;
   }
 }
 
