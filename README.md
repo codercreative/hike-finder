@@ -77,3 +77,9 @@
 [Auto-hide placeholder text](https://www.w3docs.com/snippets/css/how-to-auto-hide-placeholder-text-on-focus-with-css-and-jquery.html)
 
 [CSS positioning - Kevin Powell](https://www.youtube.com/watch?v=jFcWa9kiOHQ)
+
+[Embed Google Map in HTML](https://blog.hubspot.com/website/how-to-embed-google-map-in-html)
+
+[Swapping images from mobile to desktop](https://stackoverflow.com/questions/28966158/changing-image-depending-on-mobile-or-desktop-html-css)
+
+[A complete guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)

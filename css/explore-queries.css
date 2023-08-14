@@ -1,4 +1,8 @@
 @media (min-width: 768px) {
+  /* ************************** */
+  /* EXPLORE PAGE  */
+  /* ************************** */
+
   .header {
     display: flex;
     justify-content: space-between;
@@ -43,55 +47,41 @@
   }
 
   .hero-subtitle {
-    max-width: 380px;
+    max-width: 340px;
     font-weight: 400;
     line-height: 1.6;
   }
 
-  .search-container {
-    flex-grow: 1;
-    max-width: 350px;
-    margin-left: auto;
-  }
-
-  .search-field {
-    flex-basis: 100%;
-  }
-
   /* HIKE SECTION */
 
-  .hike-example {
-    display: flex;
-    margin: 1.3em 0;
+  .hike-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
   }
 
-  .reverse-order {
-    flex-direction: row-reverse;
+  .box-1,
+  .box-2,
+  .box-3 {
+    grid-column: 1 / 2;
   }
 
-  .hike-img {
-    flex: 2 1 0px;
-    width: 0;
-    max-height: 350px;
+  .google-map-container {
+    display: block;
+    grid-column: 2 / 3;
+    grid-row: 1 / span 3;
+    position: relative;
+    overflow: hidden; /* Ensure the map doesn't overflow the container */
+    margin: 0.7em 0;
   }
 
-  .hike-title,
-  .hike-subhead {
-    margin: 0.5em 0 0 0;
-  }
-
-  .hike-description {
-    margin: 0.5em 1em 0 0;
-  }
-
-  .hike-title {
-    letter-spacing: 0.4px;
-  }
-
-  .hike-text-container {
-    margin: 1em;
-    flex: 1 1 0px;
-    width: 0;
+  /* Adjust the size of the iframe within the .google-map-container */
+  .google-map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   /* CTA SECTION */
@@ -104,7 +94,6 @@
     margin: 0 1.5em;
   }
 
-  /* FOOTER */
   .footer-container {
     display: flex;
     flex-direction: row-reverse;
@@ -114,37 +103,5 @@
 
   .footer-copyright {
     text-align: left;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hero-subtitle {
-    max-width: 485px;
-  }
-
-  .hike-title {
-    font-size: 1.5rem;
-  }
-
-  .hike-subhead {
-    font-size: 1rem;
-  }
-
-  .hike-description {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .header {
-    padding: 1em 0;
-  }
-
-  .logo-burger-container {
-    margin: 1em 0;
-  }
-
-  .hero-subtitle {
-    max-width: 570px;
   }
 }

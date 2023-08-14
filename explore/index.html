@@ -4,31 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/queries.css" />
-    <link rel="stylesheet" href="css/helper.css" />
-    <link rel="stylesheet" href="css/explore.css" />
+
+    <link rel="stylesheet" href="../css/explore-styles.css" />
+    <link rel="stylesheet" href="../css/explore-queries.css" />
+
+    <link rel="stylesheet" href="../css/helper.css" />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
-    <title>Hike Finder</title>
+    <title>Hike Finder | Explore Page</title>
   </head>
   <body>
     <div class="container">
       <!-- NAVIGATION -->
       <header class="header">
         <div class="logo-burger-container">
-          <img class="logo" src="images/logo.svg" alt="" />
+          <img class="logo" src="../images/logo.svg" alt="" />
 
-          <img class="menu-icon" src="images/nav-menu.png" alt="" />
+          <img class="menu-icon" src="../images/nav-menu.png" alt="" />
         </div>
 
         <nav class="expand-nav-container">
           <ul class="nav">
-            <li class="home-nav"><a href="index.html">Home</a></li>
-            <li class="explore-nav"><a href="#">Explore</a></li>
+            <li class="home-nav"><a href="../index.html">Home</a></li>
+            <li class="explore-nav"><a href="explore.html">Explore</a></li>
             <li>
               <button class="sign-up-nav">
                 <a class="sign-up-link" href="#">Sign Up</a>
@@ -56,56 +57,80 @@
           </div>
         </section>
         <!--HIKE SECTION -->
+        <h3 class="hike-main-title">Explore Curated Trails Near You</h3>
         <section class="hike-section">
-          <h3 class="hike-main-title">Explore Curated Trails Near You</h3>
-          <!-- ARTICLES -->
-          <div class="hike-example">
-            <img
-              class="hike-img"
-              src="images/tryon.png"
-              alt="Tryon landscape"
-            />
+          <div class="hike-example box-1">
             <div class="hike-text-container">
-              <h4 class="hike-title">Tryon Creek State Area</h4>
-              <p class="hike-subhead">Moderate</p>
+              <img
+                class="hike-img"
+                src="../images/tryon.png"
+                alt="Tryon landscape"
+              />
 
+              <div class="hike-flexbox-container">
+                <h4 class="hike-title">Tryon Creek State Area</h4>
+                <p class="hike-subhead">Moderate</p>
+              </div>
               <p class="hike-description">
                 670-acre forested area along a ravine with well-maintained
                 trails for hikers, horses & leashed dogs.
               </p>
             </div>
           </div>
-          <div class="hike-example reverse-order">
-            <img
-              class="hike-img"
-              src="images/marquam.png"
-              alt="Marquam landscape"
-            />
+
+          <div class="hike-example box-2 reverse-order">
             <div class="hike-text-container">
-              <h4 class="hike-title">Marquam Nature Park</h4>
-              <p class="hike-subhead">Easy</p>
+              <img
+                class="hike-img"
+                src="../images/marquam.png"
+                alt="Marquam landscape"
+              />
+
+              <div class="hike-flexbox-container">
+                <div>
+                  <h4 class="hike-title">Marquam Nature Park</h4>
+                  <p class="hike-subhead">Easy</p>
+                </div>
+              </div>
               <p class="hike-description">
                 193 acres of undeveloped land & over 5 miles of hiking trails
                 with forested scenic views.
               </p>
             </div>
           </div>
-          <div class="hike-example margin-bottom">
-            <img
-              class="hike-img"
-              src="images/wildwood.png"
-              alt="Wildwood landscape"
-            />
+          <div class="hike-example box-3 reverse-order margin-bottom">
             <div class="hike-text-container">
-              <h4 class="hike-title">Wildwood Trail Area</h4>
-              <p class="hike-subhead">Easy</p>
+              <img
+                class="hike-img"
+                src="../images/wildwood.png"
+                alt="Wildwood landscape"
+              />
+              <div class="hike-flexbox-container">
+                <div>
+                  <h4 class="hike-title">Wildwood Trail Area</h4>
+                  <p class="hike-subhead">Easy</p>
+                </div>
+              </div>
               <p class="hike-description">
                 The Wildwood Trail starts at the Vietnam Memorial adjacent to
                 the Oregon Zoo and World Forestry Center and circles uphill.
               </p>
             </div>
           </div>
-          <!-- ARTICLES END-->
+
+          <div class="google-map-container">
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.4330317173476!2d-122.70538278717358!3d45.50136087095386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950a490db27789%3A0x5e2ef7bebf95618f!2sMarquam%20Trail%2C%20Portland%2C%20OR!5e0!3m2!1sen!2sus!4v1691972610865!5m2!1sen!2sus"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </figure>
+          </div>
         </section>
         <!-- CALL TO ACTION SECTION -->
         <section class="cta-section">
@@ -113,7 +138,7 @@
             <article class="cta-article">
               <img
                 class="cta-img"
-                src="images/bell-solid.svg"
+                src="../images/bell-solid.svg"
                 alt="bell icon"
               />
               <div class="cta-text-container">
@@ -127,7 +152,7 @@
             <article class="cta-article">
               <img
                 class="cta-img"
-                src="images/location-dot-solid.svg"
+                src="../images/location-dot-solid.svg"
                 alt="location dot icon"
               />
               <div class="cta-text-container">
@@ -141,7 +166,7 @@
             <article class="cta-article">
               <img
                 class="cta-img"
-                src="images/share-solid.png"
+                src="../images/share-solid.png"
                 alt="share icon"
               />
               <div class="cta-text-container">
@@ -169,7 +194,7 @@
           <div class="footer-logo-container">
             <img
               class="footer-logo"
-              src="images/logo-footer.png"
+              src="../images/logo-footer.png"
               alt="Hike Finder logo"
             />
             <p class="footer-copyright">Copyright 2023. HikeFinder</p>
@@ -185,6 +210,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="../index.js"></script>
   </body>
-  <script src="index.js"></script>
 </html>
