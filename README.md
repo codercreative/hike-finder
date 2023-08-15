@@ -25,8 +25,6 @@
 - Finalize README file
 - Publish live URL
 
-### Useful code snippets and tips
-
 ### Issues while building the app
 
 - Use flexbox to align the search input field to the page. Solved with `align-items: flex-end`
@@ -53,12 +51,6 @@
     ), url("/images/image-hero.jpg");
 }
 ```
-
-- Make search field fill up half the hero container on desktop view
-
-- Avoid hero text overflowing the 50% width of container in desktop view
-
-### Enhancement still needed
 
 ### Resources:
 
