@@ -83,3 +83,5 @@
 [Swapping images from mobile to desktop](https://stackoverflow.com/questions/28966158/changing-image-depending-on-mobile-or-desktop-html-css)
 
 [A complete guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
+[How to create a responsive hamburger menu](https://www.youtube.com/watch?v=flItyHiDm7E)

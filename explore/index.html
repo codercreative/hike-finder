@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="../css/explore-styles.css" />
     <link rel="stylesheet" href="../css/explore-queries.css" />
 
-    <link rel="stylesheet" href="../css/helper.css" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
@@ -23,8 +21,36 @@
         <div class="logo-burger-container">
           <img class="logo" src="../images/logo.svg" alt="" />
 
-          <img class="menu-icon" src="../images/nav-menu.png" alt="" />
+          <img
+            class="menu-icon"
+            id="menu-icon"
+            src="../images/nav-menu.png"
+            alt=""
+          />
         </div>
+
+        <!-- EXPANDED NAV FOR MOBILE -->
+
+        <nav class="mobile-nav-container hidden" id="mobile-nav-container">
+          <div class="close-btn-container">
+            <ion-icon
+              class="close-icon"
+              id="close-icon"
+              name="close-circle-outline"
+            ></ion-icon>
+          </div>
+
+          <ul class="mobile-nav-items-container">
+            <li class="nav-item"><a href="../index.html">Home</a></li>
+            <li class="nav-item">
+              <a href="../explore/index.html">Explore</a>
+            </li>
+            <li class="nav-item"><a href="#">Sign Up</a></li>
+            <li class="nav-item"><a href="#">Login</a></li>
+          </ul>
+        </nav>
+
+        <!-- EXPANDED NAV FOR DESKTOP -->
 
         <nav class="expand-nav-container">
           <ul class="nav">
@@ -59,65 +85,77 @@
         <!--HIKE SECTION -->
         <h3 class="hike-main-title">Explore Curated Trails Near You</h3>
         <section class="hike-section">
-          <div class="hike-example box-1">
+          <article class="hike-example box-1">
             <div class="hike-text-container">
               <img
                 class="hike-img"
                 src="../images/tryon.png"
                 alt="Tryon landscape"
               />
-
-              <div class="hike-flexbox-container">
-                <h4 class="hike-title">Tryon Creek State Area</h4>
-                <p class="hike-subhead">Moderate</p>
-              </div>
+              <h4 class="hike-title">Tryon Creek State Area</h4>
+              <p class="hike-subhead">
+                Moderate
+                <span
+                  ><img
+                    src="../images/star.png"
+                    alt=""
+                    class="star-icon" /></span
+                ><span>4.5 (428)</span>
+              </p>
               <p class="hike-description">
                 670-acre forested area along a ravine with well-maintained
                 trails for hikers, horses & leashed dogs.
               </p>
             </div>
-          </div>
-
-          <div class="hike-example box-2 reverse-order">
+          </article>
+          <article class="hike-example box-2 reverse-order">
             <div class="hike-text-container">
               <img
                 class="hike-img"
                 src="../images/marquam.png"
                 alt="Marquam landscape"
               />
-
-              <div class="hike-flexbox-container">
-                <div>
-                  <h4 class="hike-title">Marquam Nature Park</h4>
-                  <p class="hike-subhead">Easy</p>
-                </div>
-              </div>
+              <h4 class="hike-title">Marquam Nature Park</h4>
+              <p class="hike-subhead">
+                Easy
+                <span
+                  ><img
+                    src="../images/star.png"
+                    alt=""
+                    class="star-icon" /></span
+                ><span>4.3 (432)</span>
+              </p>
               <p class="hike-description">
                 193 acres of undeveloped land & over 5 miles of hiking trails
                 with forested scenic views.
               </p>
             </div>
-          </div>
-          <div class="hike-example box-3 reverse-order margin-bottom">
+          </article>
+          <article class="hike-example box-3 reverse-order">
             <div class="hike-text-container">
               <img
                 class="hike-img"
                 src="../images/wildwood.png"
                 alt="Wildwood landscape"
               />
-              <div class="hike-flexbox-container">
-                <div>
-                  <h4 class="hike-title">Wildwood Trail Area</h4>
-                  <p class="hike-subhead">Easy</p>
-                </div>
-              </div>
+
+              <h4 class="hike-title">Wildwood Trail Area</h4>
+              <p class="hike-subhead">
+                Easy
+                <span
+                  ><img
+                    src="../images/star.png"
+                    alt=""
+                    class="star-icon" /></span
+                ><span>4.0 (207)</span>
+              </p>
+
               <p class="hike-description">
                 The Wildwood Trail starts at the Vietnam Memorial adjacent to
                 the Oregon Zoo and World Forestry Center and circles uphill.
               </p>
             </div>
-          </div>
-
+          </article>
           <div class="google-map-container">
             <figure>
               <iframe
@@ -210,6 +248,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="../index.js"></script>
   </body>
+  <script src="../index.js"></script>
 </html>

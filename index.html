@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/queries.css" />
-    <link rel="stylesheet" href="css/helper.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
@@ -20,8 +20,36 @@
         <div class="logo-burger-container">
           <img class="logo" src="images/logo.svg" alt="" />
 
-          <img class="menu-icon" src="images/nav-menu.png" alt="" />
+          <img
+            class="menu-icon"
+            id="menu-icon"
+            src="../images/nav-menu.png"
+            alt=""
+          />
         </div>
+
+        <!-- EXPANDED NAV FOR MOBILE -->
+
+        <nav class="mobile-nav-container hidden" id="mobile-nav-container">
+          <div class="close-btn-container">
+            <ion-icon
+              class="close-icon"
+              id="close-icon"
+              name="close-circle-outline"
+            ></ion-icon>
+          </div>
+
+          <ul class="mobile-nav-items-container">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item">
+              <a href="explore/index.html">Explore</a>
+            </li>
+            <li class="nav-item"><a href="#">Sign Up</a></li>
+            <li class="nav-item"><a href="#">Login</a></li>
+          </ul>
+        </nav>
+
+        <!-- EXPANDED NAV FOR DESKTOP -->
 
         <nav class="expand-nav-container">
           <ul class="nav">
@@ -195,5 +223,5 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
   </body>
-  <script src="index.js"></script>
+  <script src="/index.js"></script>
 </html>
